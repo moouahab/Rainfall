@@ -1,0 +1,25 @@
+ 
+0x0804852e <+16>:    lea    -0x30(%ebp),%eax ## buffer de 48
+0x08048544 <+38>:    mov    %eax,(%esp)
+0x08048547 <+41>:    call   0x80484b4 <p> ## premiere a appelle de p 
+
+
+0x08048541 <+35>:    lea    -0x1c(%ebp),%eax ## buffer de 28
+0x08048531 <+19>:    mov    %eax,(%esp)
+0x08048534 <+22>:    call   0x80484b4 <p> ## 2eme a appelle de p 
+
+dans function  <p>
+
+0x080484b7 <+3>:     sub    $0x1018,%esp ## buff de  4120
+
+0x080484d6 <+34>:    mov    %eax,0x4(%esp)
+0x080484da <+38>:    movl   $0x0,(%esp)
+0x080484e1 <+45>:    call   0x8048380 <read@plt>
+
+0x080484d0 <+28>:    lea    -0x1008(%ebp),%eax ##  stoker de  4104
+0x080484e6 <+50>:    movl   $0xa,0x4(%esp) rajoute  de 4
+
+donc 4120 - 4104 = 16 + 4 = 20
+
+
+ 0x0804851d <+105>:   ret ## adrr de retour  de p 
